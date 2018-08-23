@@ -1,0 +1,13 @@
+.conteudo {
+margin: auto;
+width: 95%;
+}
+
+.active img {
+  width: 64px;
+  height: 64px;
+}
+
+#Userimg {
+  border-radius: 32px;
+}

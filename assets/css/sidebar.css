@@ -1,0 +1,59 @@
+.sidebar,
+.toggle {
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+}
+
+.sidebar {
+  background: #333;
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar a {
+ display: block;
+ color: white;
+ padding: 16px;
+ text-decoration: none;
+}
+
+.toggle {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.toggle-collapsed {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background: #333;
+  border: 2px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.sidebar-collapsed {
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+}
+
+.sidebar-collapsed .toggle {
+  right: 0px;
+  transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+ margin-left: 200px;
+ padding: 1px 16px;
+ height: 1000px;
+}
